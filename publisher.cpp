@@ -1,5 +1,4 @@
-#include "ros/ros.h"
-#include "bedwars_data/registrasi.h"
+#include "header.h"
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "team_publisher");

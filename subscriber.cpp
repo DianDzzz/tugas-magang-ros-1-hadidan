@@ -1,5 +1,4 @@
-#include "ros/ros.h"
-#include "bedwars_data/registrasi.h"
+#include "header.h"
 
 void teamCallback(const bedwars_data::registrasi::ConstPtr& data) {
     ROS_INFO("Received team registration data:");
