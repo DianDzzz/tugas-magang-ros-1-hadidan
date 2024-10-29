@@ -1,0 +1,483 @@
+hadidan@DianDzzz:~$ mkdir -p ~/kpp_ros/src
+hadidan@DianDzzz:~$ cd ~/kpp_ros
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+Creating symlink "/home/hadidan/kpp_ros/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/hadidan/kpp_ros/src -DCATKIN_DEVEL_PREFIX=/home/hadidan/kpp_ros/devel -DCMAKE_INSTALL_PREFIX=/home/hadidan/kpp_ros/install -G Unix Makefiles" in "/home/hadidan/kpp_ros/build"
+####
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/hadidan/kpp_ros/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/hadidan/kpp_ros/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hadidan/kpp_ros/build
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+hadidan@DianDzzz:~/kpp_ros$ cd src
+hadidan@DianDzzz:~/kpp_ros/src$ catkin_create_pkg bedwars_data std_msgs rospy roscpp
+Created file bedwars_data/package.xml
+Created file bedwars_data/CMakeLists.txt
+Created folder bedwars_data/include/bedwars_data
+Created folder bedwars_data/src
+Successfully created files in /home/hadidan/kpp_ros/src/bedwars_data. Please adjust the values in package.xml.
+hadidan@DianDzzz:~/kpp_ros/src$ cd bedwars_data
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data$ mkdir msg
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data$ cd msg
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/msg$ touch registrasi.msg
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/msg$ cd kpp_ros
+bash: cd: kpp_ros: No such file or directory
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/msg$ cd ~/kpp-ros
+bash: cd: /home/hadidan/kpp-ros: No such file or directory
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/msg$ cd ~/kpp_ros
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "cmake /home/hadidan/kpp_ros/src -DCATKIN_DEVEL_PREFIX=/home/hadidan/kpp_ros/devel -DCMAKE_INSTALL_PREFIX=/home/hadidan/kpp_ros/install -G Unix Makefiles" in "/home/hadidan/kpp_ros/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/hadidan/kpp_ros/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/hadidan/kpp_ros/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - bedwars_data
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'bedwars_data'
+-- ==> add_subdirectory(bedwars_data)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- bedwars_data: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hadidan/kpp_ros/build
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target std_msgs_generate_messages_cpp
+Scanning dependencies of target _bedwars_data_generate_messages_check_deps_registrasi
+Scanning dependencies of target std_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+Scanning dependencies of target bedwars_data_generate_messages_py
+Scanning dependencies of target bedwars_data_generate_messages_eus
+Scanning dependencies of target bedwars_data_generate_messages_cpp
+Scanning dependencies of target bedwars_data_generate_messages_nodejs
+Scanning dependencies of target bedwars_data_generate_messages_lisp
+[ 85%] Generating Javascript code from bedwars_data/registrasi.msg
+[ 85%] Generating C++ code from bedwars_data/registrasi.msg
+[ 85%] Generating Lisp code from bedwars_data/registrasi.msg
+[ 85%] Generating Python from MSG bedwars_data/registrasi
+[ 85%] Generating EusLisp manifest code for bedwars_data
+[ 85%] Generating EusLisp code from bedwars_data/registrasi.msg
+[ 85%] Built target bedwars_data_generate_messages_lisp
+[ 85%] Built target bedwars_data_generate_messages_nodejs
+[ 85%] Built target bedwars_data_generate_messages_cpp
+[100%] Generating Python msg __init__.py for bedwars_data
+[100%] Built target bedwars_data_generate_messages_py
+[100%] Built target bedwars_data_generate_messages_eus
+Scanning dependencies of target bedwars_data_generate_messages
+[100%] Built target bedwars_data_generate_messages
+hadidan@DianDzzz:~/kpp_ros$ cd src/bedwars_data/src
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/src$ touch publisher.cpp
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/src$ touch subscriber.cpp
+hadidan@DianDzzz:~/kpp_ros/src/bedwars_data/src$ cd ~/kpp_ros
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hadidan/kpp_ros/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/hadidan/kpp_ros/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/hadidan/kpp_ros/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - bedwars_data
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'bedwars_data'
+-- ==> add_subdirectory(bedwars_data)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- bedwars_data: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hadidan/kpp_ros/build
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target publisher
+Scanning dependencies of target subscriber
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[ 18%] Building CXX object bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o
+[ 18%] Building CXX object bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+[ 18%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+[ 45%] Built target bedwars_data_generate_messages_cpp
+[ 45%] Built target bedwars_data_generate_messages_lisp
+[ 54%] Built target bedwars_data_generate_messages_eus
+[ 72%] Built target bedwars_data_generate_messages_py
+[ 81%] Built target bedwars_data_generate_messages_nodejs
+[ 81%] Built target bedwars_data_generate_messages
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp: In function ‘void teamCallback(const ConstPtr&)’:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:8:34: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+    8 |     for (size_t i = 0; i < data->playerNames.size(); ++i) {
+      |                                  ^~~~~~~~~~~
+      |                                  playernames
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:1:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:11:24: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+   11 |                  data->playerNames[i].c_str(),
+      |                        ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |  __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                         ^~~~~~~~~~~
+
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:9:9: note: in expansion of macro ‘ROS_INFO’
+    9 |         ROS_INFO("Player %zu: %s, Level: %d, Rank: %s",
+      |         ^~~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp: In function ‘int main(int, char**)’:
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:7:38: error: ‘bedwars_registration’ was not declared in this scope
+    7 |     ros::Publisher pub = n.advertise<bedwars_registration::TeamRegistration>("team_registration", 1000);
+      |                                      ^~~~~~~~~~~~~~~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:7:28: error: parse error in template argument list
+    7 |     ros::Publisher pub = n.advertise<bedwars_registration::TeamRegistration>("team_registration", 1000);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:7:103: error: no matching function for call to ‘ros::NodeHandle::advertise<<expression error> >(const char [18], int)’
+    7 |     ros::Publisher pub = n.advertise<bedwars_registration::TeamRegistration>("team_registration", 1000);
+      |                                                                                                       ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:247:15: note: candidate: ‘template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)’
+  247 |     Publisher advertise(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:247:15: note:   template argument deduction/substitution failed:
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:7:103: error: template argument 1 is invalid
+    7 |     ros::Publisher pub = n.advertise<bedwars_registration::TeamRegistration>("team_registration", 1000);
+      |                                                                                                       ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:313:13: note: candidate: ‘template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)’
+  313 |   Publisher advertise(const std::string& topic, uint32_t queue_size,
+      |             ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:313:13: note:   template argument deduction/substitution failed:
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:7:103: error: template argument 1 is invalid
+    7 |     ros::Publisher pub = n.advertise<bedwars_registration::TeamRegistration>("team_registration", 1000);
+      |                                                                                                       ^
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:10:5: error: ‘bedwars_registration’ is not a class, namespace, or enumeration
+   10 |     bedwars_registration::registrasi team_data;
+      |     ^~~~~~~~~~~~~~~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:11:5: error: ‘team_data’ was not declared in this scope
+   11 |     team_data.teamName = "Warriors Keputih";
+      |     ^~~~~~~~~
+make[2]: *** [bedwars_data/CMakeFiles/publisher.dir/build.make:63: bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:515: bedwars_data/CMakeFiles/publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [bedwars_data/CMakeFiles/subscriber.dir/build.make:63: bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:434: bedwars_data/CMakeFiles/subscriber.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
+Invoking "make -j12 -l12" failed
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hadidan/kpp_ros/build"
+####
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target publisher
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  9%] Building CXX object bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+[  9%] Built target std_msgs_generate_messages_lisp
+[ 18%] Built target std_msgs_generate_messages_nodejs
+[ 18%] Building CXX object bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o
+[ 18%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+[ 54%] Built target bedwars_data_generate_messages_cpp
+[ 54%] Built target bedwars_data_generate_messages_nodejs
+[ 54%] Built target bedwars_data_generate_messages_py
+[ 72%] Built target bedwars_data_generate_messages_eus
+[ 81%] Built target bedwars_data_generate_messages_lisp
+[ 81%] Built target bedwars_data_generate_messages
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp: In function ‘void teamCallback(const ConstPtr&)’:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:8:34: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+    8 |     for (size_t i = 0; i < data->playerNames.size(); ++i) {
+      |                                  ^~~~~~~~~~~
+      |                                  playernames
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:1:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:11:24: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+   11 |                  data->playerNames[i].c_str(),
+      |                        ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |  __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                         ^~~~~~~~~~~
+
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:9:9: note: in expansion of macro ‘ROS_INFO’
+    9 |         ROS_INFO("Player %zu: %s, Level: %d, Rank: %s",
+      |         ^~~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp: In function ‘int main(int, char**)’:
+/home/hadidan/kpp_ros/src/bedwars_data/src/publisher.cpp:13:15: error: ‘bedwars_data::registrasi’ {aka ‘struct bedwars_data::registrasi_<std::allocator<void> >’} has no member named ‘playerNames’; did you mean ‘playernames’?
+   13 |     team_data.playerNames = {"Marvel", "Xayon", "Peylang", "David"};
+      |               ^~~~~~~~~~~
+      |               playernames
+make[2]: *** [bedwars_data/CMakeFiles/publisher.dir/build.make:63: bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:515: bedwars_data/CMakeFiles/publisher.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [bedwars_data/CMakeFiles/subscriber.dir/build.make:63: bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:434: bedwars_data/CMakeFiles/subscriber.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
+Invoking "make -j12 -l12" failed
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hadidan/kpp_ros/build"
+####
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target publisher
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  9%] Building CXX object bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+[  9%] Built target std_msgs_generate_messages_cpp
+[  9%] Built target std_msgs_generate_messages_eus
+[ 18%] Building CXX object bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o
+[ 18%] Built target std_msgs_generate_messages_lisp
+[ 18%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+[ 45%] Built target bedwars_data_generate_messages_cpp
+[ 63%] Built target bedwars_data_generate_messages_py
+[ 63%] Built target bedwars_data_generate_messages_nodejs
+[ 72%] Built target bedwars_data_generate_messages_eus
+[ 81%] Built target bedwars_data_generate_messages_lisp
+[ 81%] Built target bedwars_data_generate_messages
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp: In function ‘void teamCallback(const ConstPtr&)’:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:8:34: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+    8 |     for (size_t i = 0; i < data->playerNames.size(); ++i) {
+      |                                  ^~~~~~~~~~~
+      |                                  playernames
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:1:
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:11:24: error: ‘const struct bedwars_data::registrasi_<std::allocator<void> >’ has no member named ‘playerNames’; did you mean ‘playernames’?
+   11 |                  data->playerNames[i].c_str(),
+      |                        ^~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:351:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+  351 |  __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+      |                                                                                         ^~~~~~~~~~~
+
+/opt/ros/noetic/include/ros/console.h:390:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+  390 |       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/noetic/include/ros/console.h:575:35: note: in expansion of macro ‘ROS_LOG_COND’
+  575 | #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+      |                                   ^~~~~~~~~~~~
+/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+  110 | #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       ^~~~~~~
+/home/hadidan/kpp_ros/src/bedwars_data/src/subscriber.cpp:9:9: note: in expansion of macro ‘ROS_INFO’
+    9 |         ROS_INFO("Player %zu: %s, Level: %d, Rank: %s",
+      |         ^~~~~~~~
+make[2]: *** [bedwars_data/CMakeFiles/subscriber.dir/build.make:63: bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:434: bedwars_data/CMakeFiles/subscriber.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 90%] Linking CXX executable /home/hadidan/kpp_ros/devel/lib/bedwars_data/publisher
+[ 90%] Built target publisher
+make: *** [Makefile:141: all] Error 2
+Invoking "make -j12 -l12" failed
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hadidan/kpp_ros/build"
+####
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target subscriber
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[ 18%] Built target publisher
+[ 18%] Built target std_msgs_generate_messages_lisp
+[ 27%] Building CXX object bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+[ 27%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+[ 72%] Built target bedwars_data_generate_messages_lisp
+[ 72%] Built target bedwars_data_generate_messages_eus
+[ 72%] Built target bedwars_data_generate_messages_nodejs
+[ 72%] Built target bedwars_data_generate_messages_cpp
+[ 90%] Built target bedwars_data_generate_messages_py
+[ 90%] Built target bedwars_data_generate_messages
+[100%] Linking CXX executable /home/hadidan/kpp_ros/devel/lib/bedwars_data/subscriber
+[100%] Built target subscriber
+hadidan@DianDzzz:~/kpp_ros$ catkin_make
+Base path: /home/hadidan/kpp_ros
+Source space: /home/hadidan/kpp_ros/src
+Build space: /home/hadidan/kpp_ros/build
+Devel space: /home/hadidan/kpp_ros/devel
+Install space: /home/hadidan/kpp_ros/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hadidan/kpp_ros/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/hadidan/kpp_ros/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/hadidan/kpp_ros/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - bedwars_data
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'bedwars_data'
+-- ==> add_subdirectory(bedwars_data)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- bedwars_data: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hadidan/kpp_ros/build
+####
+#### Running command: "make -j12 -l12" in "/home/hadidan/kpp_ros/build"
+####
+Scanning dependencies of target publisher
+Scanning dependencies of target subscriber
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  9%] Building CXX object bedwars_data/CMakeFiles/publisher.dir/src/publisher.cpp.o
+[ 18%] Building CXX object bedwars_data/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+[ 18%] Built target _bedwars_data_generate_messages_check_deps_registrasi
+[ 45%] Built target bedwars_data_generate_messages_lisp
+[ 45%] Built target bedwars_data_generate_messages_nodejs
+[ 54%] Built target bedwars_data_generate_messages_py
+[ 72%] Built target bedwars_data_generate_messages_eus
+[ 81%] Built target bedwars_data_generate_messages_cpp
+[ 81%] Built target bedwars_data_generate_messages
+[ 90%] Linking CXX executable /home/hadidan/kpp_ros/devel/lib/bedwars_data/publisher
+[ 90%] Built target publisher
+[100%] Linking CXX executable /home/hadidan/kpp_ros/devel/lib/bedwars_data/subscriber
+[100%] Built target subscriber
